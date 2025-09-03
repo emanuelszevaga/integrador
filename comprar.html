@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Compra online</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background-color: #d0fcdf;
+            }
+
+            h1{
+                text-align: center;
+                font-family: 'Courier New', Courier, monospace;
+                color: #2e7d32;
+                margin-bottom: 30px;
+            }
+
+            nav{
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            nav a{
+                background-color: rgba(22, 54, 20, 0.707);
+                text-decoration: none;
+                text-align: center;
+                display: inline-block;
+                color: white;
+                padding: 10px 15px;
+                font-size: 18px;
+                text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+            }
+
+            nav a:hover{
+                text-align: center;
+                color: #a5d6a7;
+            }
+
+            form {
+                background-color: rgba(27, 26, 26, 0.411); 
+                padding: 20px;            
+                border-radius: 10px;      
+                box-shadow: 0 2px 6px rgba(0,0,0,0.2); 
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1>Formulario de compra</h1>
+        <nav>
+            <a href="index.html">Inicio</a> 
+            <a href="listado_tabla.html">Productos (Tabla)</a> 
+            <a href="listado_box.html">Productos (Box)</a> 
+            <a href="producto.html">Ficha</a> 
+            <a href="comprar.html">Comprar</a>
+        </nav>
+
+        <form>
+            <label for="nombre">Nombre:</label><input type="text" id="nombre" name="nombre"><br><br>
+            <label for="apellido">Apellido:<input type="text" id="apellido" name="apellido"><br><br></label>
+            <label for="direccion">Dirección:<input type="text" id="direccion" name="direccion"><br><br></label>
+            <label for="telefono">Teléfono:<input type="int" id="telefono" name="telefono"><br><br></label>
+            <label for="email">E-mail:<input type="email" id="email" name="email"><br><br></label>
+            <label for="pago">Elige un medio de pago:</label>
+            <select id="pago" name="pago">
+            <option value="tarjeta">Tarjeta</option>
+            <option value="efectivo">Efectivo</option>
+            <option value="transferencia">Transferencia</option>
+            <option value="mercadopago">Mercado Pago</option>
+            </select><br><br>
+
+            <p>Selecciona el producto que desea comprar y la cantidad</p>
+
+            <label for="productos">Productos:</label>
+            <input list="productos" name="productos">
+            <datalist id="productos">
+                <option value="Naranja ombligo">
+                <option value="Naranja de jugo">
+                <option value="Limón 4 estaciones">
+                <option value="Pomelo rosado">
+            </datalist>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad">
+            <input type="submit" value="Confirmar compra">
+        </form>
+    </body>
+</html>

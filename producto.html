@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ficha de producto</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background-color: #d0fcdf;
+            }
+
+            h1{
+                text-align: center;
+                font-family: 'Courier New', Courier, monospace;
+                color: #2e7d32;
+                margin-bottom: 30px;
+            }
+
+            nav{
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            nav a{
+                background-color: rgba(22, 54, 20, 0.707);
+                text-decoration: none;
+                text-align: center;
+                display: inline-block;
+                color: white;
+                padding: 10px 15px;
+                font-size: 18px;
+                text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+            }
+
+            nav a:hover{
+                text-align: center;
+                color: #a5d6a7;
+            }
+
+            .seccion{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 40px 10%;
+                gap: 30px;
+            }
+
+            .seccion:nth-child(odd){
+                flex-direction: row-reverse; 
+                background-color: rgba(27, 26, 26, 0.411);
+            }
+
+            .seccion img{
+                width: 40%;
+                border-radius: 8px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            }
+
+            .info{
+                width: 50%;
+            }
+
+            .info h2{
+                text-align: center;
+                color: #2e7d32;
+                margin-bottom: 10px;
+            }
+
+            .info ul{
+                list-style-type: disc;
+                margin-left: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Naranja Ombligo</h1>
+        <nav>
+            <a href="index.html">Inicio</a> 
+            <a href="listado_tabla.html">Productos (Tabla)</a> 
+            <a href="listado_box.html">Productos (Box)</a> 
+            <a href="producto.html">Ficha</a> 
+            <a href="comprar.html">Comprar</a>
+        </nav>
+
+        <div class="seccion">
+            <img src="primera_foto_naranja.jpg" alt="Naranja Ombligo">
+            <div class="info">
+                <h2>Descripción</h2>
+                <p>
+                    La naranja Newhall es una variedad de naranja de ombligo (Navel) muy popular en el mercado, valorada por su maduración temprana y su excelente calidad de fruto.
+                </p>
+            </div>
+        </div>
+
+        <div class="seccion">
+            <img src="naraja_ombligo.jpg" alt="Naranja Ombligo">
+            <div class="info">
+                <h2>Origen y Características Botánicas</h2>
+                <ul>
+                    <li>Nombre científico: Citrus sinensis new hall</li>
+                    <li>Origen: Mutación de la variedad Washington Navel</li>
+                    <li>Árbol: Vigoroso, de buen desarrollo y forma redondeada. Posee un follaje denso de color verde oscuro y, a diferencia de otras variedades, presenta poca o ninguna espinosidad.</li>
+                    <li>Floración: Flores son sin polen</li>
+                    <li>Tendencia: Puede presentar alternancia de cosechas (producir más frutos un año que el siguiente)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="seccion">
+            <img src="segunda_foto_naranja.jpg" alt="Naranja Ombligo">
+            <div class="info">
+                <h2>Características del fruto</h2>
+                <ul>
+                    <li>Tipo: Naranja ombligo</li>
+                    <li>Forma: Redondeada a ligeramente ovalada, con un ombligo poco prominente en la parte inferior.</li>
+                    <li>Tamaño: Medio a grande</li>
+                    <li>Piel: De color naranja intenso, con una superficie de rugosidad fina</li>
+                    <li>Pulpa: Muy jugosa, de textura fina y sin semillas</li>
+                    <li>Sabor: Dulce, con un aroma y sabor intensos</li>
+                    <li>Contenido: Rico en jugo y con un alto contenido de vitamina C, así como otros fitoquímicos como los flavonoides, que tienen efectos antioxidantes</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="seccion">
+            <img src="cuarta_foto_naranja.jpg" alt="Naranja Ombligo">
+            <div class="info">
+                <h2>Cultivo y cosecha</h2>
+                <ul>
+                    <li>Suelo: Prefiere suelos ácidos y fértiles, con buen drenaje. No tolera la salinidad</li>
+                    <li>Riego: Frecuente y moderado, evitando el encharcamiento</li>
+                    <li>Manejo: Requiere cuidados específicos como la poda para mantener la productividad y la protección contra plagas comunes como la mosca blanca, pulgones, cochinillas y ácaros</li>
+                    <li>Clima: Especie subtropical que se adapta bien a climas templados</li>
+                    <li>Periodo de maduración/cosecha: Invierno</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

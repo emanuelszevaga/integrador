@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Productos</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background-color: #d0fcdf;
+                text-align: center;
+            }
+            
+            h1{
+                font-family: 'Courier New', Courier, monospace;
+                color: #2e7d32;
+                margin-bottom: 30px;
+            }
+
+            nav{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            nav a{
+                background-color: rgba(22, 54, 20, 0.707);
+                text-decoration: none;
+                text-align: center;
+                display: inline-block;
+                color: white;
+                padding: 10px 15px;
+                font-size: 18px;
+                text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+            }
+            nav a:hover{
+                color: #a5d6a7;
+            }
+
+            .contenedor{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 30px;
+            }
+
+            .producto{
+                background-color: rgba(27, 26, 26, 0.411);
+                border: 1px solid #0f2114;
+                border-radius: 8px;
+                padding: 15px;
+                width: 250px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.293);
+            }
+
+            .producto img{
+                width: 100%;
+                border-radius: 5px;
+            }
+
+            .producto h2{
+                font-size: 16px;
+                margin: 10px 0 5px 0;
+                text-transform: uppercase;
+            }
+
+            .producto p{
+                font-size: 18px;
+                font-weight: bold;
+                color: #000000;
+                margin: 5px 0 15px 0;
+            }
+
+            .btn{
+                background-color: rgba(22, 54, 20, 0.707);
+                border: none;
+                color: white;
+                padding: 10px 15px;
+                text-decoration: none;
+                font-size: 14px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .btn:hover{
+                color: #a5d6a7;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Productos</h1>
+        <nav>
+            <a href="index.html">Inicio</a> 
+            <a href="listado_tabla.html">Productos (Tabla)</a> 
+            <a href="listado_box.html">Productos (Box)</a> 
+            <a href="producto.html">Ficha</a> 
+            <a href="comprar.html">Comprar</a>
+        </nav>
+
+        <div class="contenedor">
+            <div class="producto">
+                <img src="planta_ej.jpg" alt="Planta 1">
+                <h2>Naranja ombligo</h2>
+                <p>$6.000</p>
+                <button class="btn">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="planta_ej.jpg" alt="Planta 2">
+                <h2>Naranja de jugo</h2>
+                <p>$6.000</p>
+                <button class="btn">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="planta_ej.jpg" alt="Planta 3">
+                <h2>Limón 4 estaciones</h2>
+                <p>$6.000</p>
+                <button class="btn">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="planta_ej.jpg" alt="Planta 4">
+                <h2>Pomelo rosado</h2>
+                <p>$6.000</p>
+                <button class="btn">Agregar al carrito</button>
+            </div>
+        </div>
+    </body>
+</html>
